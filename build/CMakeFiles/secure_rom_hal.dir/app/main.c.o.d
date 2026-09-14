@@ -24,4 +24,13 @@ CMakeFiles/secure_rom_hal.dir/app/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/souranshu/Projects/secure_rom_hal/platform/include/platform_status.h
+ /home/souranshu/Projects/secure_rom_hal/platform/include/platform.h \
+ /home/souranshu/Projects/secure_rom_hal/platform/include/platform_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+ /home/souranshu/Projects/secure_rom_hal/platform/include/platform_status.h \
+ /home/souranshu/Projects/secure_rom_hal/platform/include/platform_register.h
