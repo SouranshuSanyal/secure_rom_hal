@@ -1,0 +1,3 @@
+/home/souranshu/Projects/secure_rom_hal/build/CMakeFiles/secure_rom_hal.dir
+/home/souranshu/Projects/secure_rom_hal/build/CMakeFiles/edit_cache.dir
+/home/souranshu/Projects/secure_rom_hal/build/CMakeFiles/rebuild_cache.dir
