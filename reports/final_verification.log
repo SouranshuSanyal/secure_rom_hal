@@ -1,0 +1,96 @@
+Started: Tue Oct 27 09:12:42 PM IST 2026
+===== CMake configure =====
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/souranshu/Projects/secure_rom_hal/build
+===== C build =====
+[ 27%] Built target secure_rom_hal
+[ 35%] Built target test_uart_concurrent
+[ 39%] Built target test_ring_buffer
+[ 53%] Built target test_driver_regression
+[ 67%] Built target test_driver_negative
+[ 81%] Built target test_driver_recovery
+[ 86%] Built target test_platform_utilities
+[ 89%] Built target test_periph
+[ 94%] Built target test_axi_secure_driver
+[100%] Built target test_axi_secure_negative
+===== C regression tests =====
+Internal ctest changing into directory: /home/souranshu/Projects/secure_rom_hal/build
+Test project /home/souranshu/Projects/secure_rom_hal/build
+    Start 1: UART_Concurrent_Test
+1/9 Test #1: UART_Concurrent_Test .............   Passed    0.00 sec
+    Start 2: Ring_Buffer_Test
+2/9 Test #2: Ring_Buffer_Test .................   Passed    0.00 sec
+    Start 3: Driver_Regression_Test
+3/9 Test #3: Driver_Regression_Test ...........   Passed    0.00 sec
+    Start 4: Driver_Negative_Test
+4/9 Test #4: Driver_Negative_Test .............   Passed    0.00 sec
+    Start 5: Driver_Recovery_Test
+5/9 Test #5: Driver_Recovery_Test .............   Passed    0.00 sec
+    Start 6: Platform_Utilities_Test
+6/9 Test #6: Platform_Utilities_Test ..........   Passed    0.00 sec
+    Start 7: Peripheral_HAL_Test
+7/9 Test #7: Peripheral_HAL_Test ..............   Passed    0.00 sec
+    Start 8: test_axi_secure_driver
+8/9 Test #8: test_axi_secure_driver ...........   Passed    0.00 sec
+    Start 9: test_axi_secure_negative
+9/9 Test #9: test_axi_secure_negative .........   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   0.02 sec
+===== Compile AXI functional testbench =====
+===== Run AXI functional testbench =====
+PASS read addr=0 data=00000000 resp=00
+PASS read addr=8 data=00000000 resp=00
+PASS write addr=0 data=00000001 strb=1111
+PASS read addr=0 data=00000001 resp=00
+PASS read addr=4 data=00000001 resp=00
+PASS write addr=8 data=11223344 strb=1111
+PASS read addr=8 data=11223344 resp=00
+PASS write addr=8 data=000000aa strb=0001
+PASS read addr=8 data=112233aa resp=00
+PASS write addr=8 data=00bb0000 strb=0100
+PASS read addr=8 data=11bb33aa resp=00
+PASS write addr=8 data=ffffffff strb=0000
+PASS read addr=8 data=11bb33aa resp=00
+PASS GPIO output=aa
+PASS write rejected addr=4 BRESP=DECERR
+PASS read addr=4 data=00000001 resp=00
+PASS read addr=c data=00000000 resp=11
+PASS write rejected addr=c BRESP=DECERR
+ALL AXI TESTS PASSED
+rtl/tb/tb_axi_secure_peripheral.v:230: $finish called at 820000 (1ps)
+===== Compile AXI backpressure testbench =====
+===== Run AXI backpressure testbench =====
+
+TEST 1: Write response backpressure
+BVALID and BRESP held while BREADY=0
+PASS: Write response completed
+
+TEST 2: Read response backpressure
+RVALID, RDATA and RRESP held while RREADY=0
+PASS: Read response completed
+
+--------------------------------
+ALL BACKPRESSURE TESTS PASSED
+--------------------------------
+rtl/tb/tb_axi_backpressure.v:261: $finish called at 190000 (1ps)
+===== Compile AXI reset testbench =====
+===== Run AXI reset testbench =====
+Starting Day 45 AXI reset tests
+PASS: Reset and idle state
+TEST: Reset with pending write response
+PASS: Pending write response cleared
+TEST: Reset with pending read response
+PASS: Pending read response cleared
+TEST: Register reset values
+PASS: OUTPUT register reset to zero
+PASS: CONTROL register reset to zero
+TEST: Transaction recovery after reset
+PASS: Post-reset read/write recovery
+----------------------------------
+ALL DAY 45 RESET TESTS PASSED
+----------------------------------
+rtl/tb/tb_axi_reset.v:305: $finish called at 360000 (1ps)
+Completed: Tue Oct 27 09:12:42 PM IST 2026

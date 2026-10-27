@@ -1,0 +1,4 @@
+]633;E;gcc --version;781196e3-ba58-4e72-a215-e944e013536c]633;Cgcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake version 3.28.3
+Sanitizers: AddressSanitizer + UndefinedBehaviorSanitizer
+Build directory: build-sanitize

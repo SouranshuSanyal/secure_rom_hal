@@ -1,0 +1,16 @@
+Internal ctest changing into directory: /home/souranshu/Projects/secure_rom_hal/build-sanitize
+Test project /home/souranshu/Projects/secure_rom_hal/build-sanitize
+    Start 1: UART_Concurrent_Test
+1/5 Test #1: UART_Concurrent_Test .............   Passed    0.05 sec
+    Start 2: Ring_Buffer_Test
+2/5 Test #2: Ring_Buffer_Test .................   Passed    0.04 sec
+    Start 3: Driver_Regression_Test
+3/5 Test #3: Driver_Regression_Test ...........   Passed    0.04 sec
+    Start 4: Driver_Negative_Test
+4/5 Test #4: Driver_Negative_Test .............   Passed    0.04 sec
+    Start 5: Driver_Recovery_Test
+5/5 Test #5: Driver_Recovery_Test .............   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.22 sec
