@@ -1,0 +1,18 @@
+
+#ifndef AXI_SECURE_REGS_H
+#define AXI_SECURE_REGS_H
+
+#include "periph.h"
+
+/* Reuse the existing HAL register offsets */
+#define AXI_SECURE_CONTROL_OFFSET PERIPH_CONTROL_OFFSET
+#define AXI_SECURE_STATUS_OFFSET  PERIPH_STATUS_OFFSET
+#define AXI_SECURE_OUTPUT_OFFSET  PERIPH_OUTPUT_OFFSET
+
+#define AXI_SECURE_CONTROL_ENABLE (1U << 0)
+#define AXI_SECURE_GPIO_WIDTH     8U
+
+#define AXI_SECURE_RESP_OKAY      0U
+#define AXI_SECURE_RESP_DECERR    3U
+
+#endif

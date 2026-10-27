@@ -1,0 +1,27 @@
+# CMake build output
+build/
+build-*/
+cmake-build-*/
+
+# Generated simulation executables
+build_axi_backpressure
+build_axi_reset
+build_axi_secure_peripheral
+build_secure_peripheral
+build_test_axi_secure_driver
+
+# Compiler and coverage artifacts
+*.o
+*.a
+*.so
+*.gcda
+*.gcno
+*.gcov
+
+# Editor settings
+.vscode/
+
+# Temporary files
+*~
+*.swp
+*.tmp

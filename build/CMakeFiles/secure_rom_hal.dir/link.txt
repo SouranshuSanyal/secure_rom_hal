@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/secure_rom_hal.dir/app/main.c.o -o secure_rom_hal 
