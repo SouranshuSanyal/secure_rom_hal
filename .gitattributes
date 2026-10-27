@@ -1,0 +1,3 @@
+# Exclude generated coverage reports from GitHub language statistics
+reports/day38/*.html linguist-generated=true
+reports/day38/*.css linguist-generated=true
